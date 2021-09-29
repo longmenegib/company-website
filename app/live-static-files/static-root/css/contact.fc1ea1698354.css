@@ -1,0 +1,119 @@
+.navbar-toggle-icon:active, .navbar-toggler:focus, .navbar-toggler:active{
+    box-shadow: none;
+    outline: none;
+}
+
+.contact_sub span{
+    color: aqua;
+    font-weight: 900;
+    font-size: x-large;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.contact_img{
+    position: relative;
+    height: 350px;
+    width: 100%;
+}
+.contact_img .contact_sub{
+    position: absolute;
+    z-index: 1;
+    left: 0px;
+    top: 140px;
+    right: 0px;
+    text-align: center;
+}
+
+.contact_img img{
+    z-index: 0;
+    height: 100%;
+    object-fit: cover;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+section .con_title{
+    font-size: x-large;
+    margin-top: 30px;
+}
+section .con_body{
+    margin-top: 30px;
+}
+
+section .con_foot{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.form-item{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+.form-item input, .form-item textarea{
+    outline: none;
+}
+.form-item input:focus, .form-item textarea:focus{
+    border: 1px aqua solid;
+    box-shadow: 2px;
+}
+.form-itemButton button{
+    background-color: aqua;
+    border: none;
+    outline: none;
+    color: white;
+    height: 40px;
+}
+.form-itemButton{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+
+@media (min-width: 567px) {
+    .contact_sub span{
+        font-size: xx-large;
+    }
+    .contact_img img{
+        object-fit: cover;
+        position: absolute;
+    }
+}
+
+@media  (max-width: 575px) {
+  
+    .active{
+        background-color: rgb(27, 182, 182);
+    }
+    .nav-item:hover{
+        background-color: rgb(20, 20, 19);
+    }
+    
+}
+
+@media (min-width:768px) {
+    section{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    .section_1{
+        flex: 0.3;
+        justify-self: flex-start;
+    }
+    .section_2{
+        flex: 0.3;
+        justify-self: flex-end;
+        margin-left: 20px;
+    }
+    .form-item{
+        margin-bottom: 20px;
+    }
+}

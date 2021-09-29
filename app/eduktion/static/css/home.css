@@ -1,0 +1,338 @@
+.navbar-toggle-icon:active, .navbar-toggler:focus, .navbar-toggler:active{
+    box-shadow: none;
+    outline: none;
+}
+
+span{
+    color: aqua;
+}
+
+.home_img{
+    position: relative;
+    height: 678px;
+    width: '100%';
+}
+.home_img .home_sub{
+    position: absolute;
+    width: '100%';
+    z-index: 1;
+    bottom: 380px;
+    left: 0px;
+    right: 0px;
+    text-align: center;
+}
+
+.home_img img{
+    position: absolute;
+    z-index: 0;
+}
+
+.title_big{
+    font-size: xxx-large;
+    color: white;
+}
+.title_small{
+    font-size: x-large;
+    color: rgb(209, 192, 192)
+}
+
+.section_1{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.section_1 div{
+    text-align: center;
+    width: '100%';
+}
+.sect_1a{
+    font-size: xx-large;
+    font-family: 'Times New Roman', Times, serif;
+}
+.sect_1b{
+    width: '30%';
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+.section_2{
+    margin: auto;
+    padding: 0;
+    margin-bottom: 100px;
+}
+
+.section_2 img{
+    width: 100%;
+    height: 400px;
+    padding-left: 10px;
+    padding-right: 10px;
+    object-fit: fill;
+}
+
+.section_2 div h3{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.section_2 div {
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    position: relative;
+}
+.section_2 div p{
+    color: gray;
+}
+.sect_2_button{
+    position: relative;
+    bottom: -50px;
+    background-color: aqua;
+    border: none;
+    outline: none;
+    color: white;
+    font-weight: 900;
+    height: 40px;
+}
+
+.breakDiv{
+    display: flex; 
+    text-align: center; 
+    justify-content: center; 
+    padding-bottom: 30px;
+    margin-top: 30px;
+   
+}
+.breakDiv p{
+    font-size: xx-large;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.section_3{
+    position: relative;
+    width: '100%';
+    height: 100%;
+    
+}
+.section_3 .sect_3{
+    position: absolute;
+    width: '100%';
+    z-index: 1;
+    left: 0px;
+    right: 0px;
+    top:0px;
+    font-weight: "600";
+    margin: 10px;
+}
+
+.section_3 img{
+    z-index: 0;
+    width: 100%;
+    height: 400px;
+}
+.section_3 .about_home{
+    font-size: xx-large;
+    color: white;
+}
+.section_3 .about_sub{
+    font-size: x-large;
+    color: aliceblue;
+}
+.section_3 .about_text{
+    font-size: small;
+    color: antiquewhite;
+}
+.timeDay{
+    border: 0.5px white solid;
+    padding: 20px;
+    font-size: xxx-large;
+    margin-top: 50px;
+    color: beige;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.section_4{
+    margin-bottom: 40px;
+}
+.section_4 .sect_4{
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+.section_5{
+    position: relative;
+    width: 100%;
+    height: 600px;
+    
+}
+.section_5 .sect{
+    text-align: center;
+    color: rgb(164, 174, 184);
+}
+
+.section_5 .sect_5{
+    position: absolute;
+    width: '100%';
+    height: 100%;
+    z-index: 1;
+    left: 0px;
+    right: 0px;
+    top:0px;
+    font-weight: "600";
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.section_5 .section_5_img{
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.section_6{
+    position: relative;
+    width: 100%;
+    height: 400px;
+    
+}
+.section_6 .sect{
+    text-align: center;
+    color: rgb(208, 218, 228);
+}
+
+.section_6 .sect_6{
+    position: absolute;
+    width: '100%';
+    height: 100%;
+    z-index: 1;
+    left: 0px;
+    right: 0px;
+    top:0px;
+    font-weight: "600";
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.section_6 .section_6_img{
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.customer_button{
+    background-color: aqua;
+    border: none;
+    outline: none;
+    color: white;
+    font-weight: 600;
+    height: 40px;
+    margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+    .home_img{
+        display: none;
+    }
+}
+
+@media  (max-width: 575px) {
+  
+    .active{
+        background-color: rgb(27, 182, 182);
+    }
+    .nav-item:hover{
+        background-color: rgb(20, 20, 19);
+    }
+    
+}
+
+@media (min-width: 992px) {
+    .section_2{
+        display: flex;
+        justify-content: center;
+        width: 300;
+    }
+    .section_2 img{
+        width: 400px;
+        height: 400px;
+    }
+    .section_2 div {
+        width: 400px;
+        text-align: left;
+        padding-left: 20px;
+    }
+    .sect_2_button{
+        position: absolute;
+        bottom: 0px;
+        right: 0;
+        background-color: aqua;
+        border: none;
+        outline: none;
+        color: white;
+        font-weight: 900;
+        height: 40px;
+    }
+    .section_3{
+        width: 80%;
+        margin: auto;
+        margin-bottom: 30px;
+        position: relative;
+    }
+    .section_3 .sect{
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
+    .sect_3{
+        display: flex;
+        justify-content: center;
+        align-content: center;
+    }
+    .timeDay{
+        width: 80%;
+        margin-right: 20px;
+    }
+    .sect_3_text{
+        margin: 50px;
+    }
+    .section_5 .section_5_img{
+        width: 100%;
+        height: 70%;
+        object-fit: cover;
+        margin: auto;
+    }
+    .section_5{
+        display: flex;
+        width: 60%;
+        margin: auto;
+        height: 100%;
+    }
+    .section_5 .sect_5{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .section_6{
+        display: flex;
+        width: 60%;
+        margin: auto;
+    }
+    .section_6 .section_6_img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        margin: auto;
+    }
+}

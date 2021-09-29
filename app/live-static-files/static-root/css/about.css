@@ -1,0 +1,88 @@
+.navbar-toggle-icon:active, .navbar-toggler:focus, .navbar-toggler:active{
+    box-shadow: none;
+    outline: none;
+}
+
+.about_sub span{
+    color: aqua;
+    font-weight: 900;
+    font-size: x-large;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.about_img{
+    position: relative;
+    height: 350px;
+    width: 100%;
+}
+.about_img .about_sub{
+    position: absolute;
+    z-index: 1;
+    left: 0px;
+    top: 140px;
+    right: 0px;
+    text-align: center;
+}
+
+.about_img img{
+    z-index: 0;
+    height: 100%;
+    object-fit: cover;
+}
+
+.aboutUs{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.col-lg-3, .col-sm-6{
+    text-align: center;
+    margin-bottom: 20px;
+} 
+
+.team-title span{
+    font-weight: 900;
+    color: rgb(78, 75, 75);
+}
+
+@media (min-width: 567px) {
+    .about_sub span{
+        font-size: xx-large;
+    }
+    .about_img img{
+        object-fit: cover;
+        position: absolute;
+    }
+}
+
+@media (min-width: 768px) {
+    .aboutUs{
+        width: 600px;
+        margin: auto;
+    }
+}
+@media  (max-width: 575px) {
+  
+    .active{
+        background-color: rgb(27, 182, 182);
+    }
+    .nav-item:hover{
+        background-color: rgb(20, 20, 19);
+    }
+    
+}
+
+
+
+.breakDiv{
+    display: flex; 
+    text-align: center; 
+    justify-content: center; 
+    padding-bottom: 30px;
+    margin-top: 30px;
+}
+.breakDiv p{
+    font-size: xx-large;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}

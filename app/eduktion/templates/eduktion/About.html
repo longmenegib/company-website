@@ -1,0 +1,135 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="{% static 'bootstrap/js/jquery.js' %}"></script>
+    <script src="{% static 'bootstrap/js/bootstrap.min.js' %}"></script>
+   
+    <script src="{% static 'gsap-public/minified/gsap.min.js' %}"></script>
+    <script src="{% static 'gsap-public/minified/ScrollTrigger.min.js' %}"></script>
+    <script src="{% static 'gsap-public/minified/ScrollToPlugin.min.js' %}"></script>
+
+
+    <link rel="stylesheet" href="{% static 'bootstrap/css/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static 'css/about.css' %}">
+    <link rel="stylesheet" href="{% static 'css/footer.css' %}">
+    <title>about us</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top">
+        
+        <a class="navbar-brand">
+            <img src="{% static 'images/43.jpg' %}" width="20" height="20" alt="">
+            Gibs-Tech
+        </a>
+        
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarMenu" type="button">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarMenu">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a href="{% url 'home' %}" class="nav-link">HOME</a></li>
+                <li class="nav-item"><a href="{% url 'about' %}" class="nav-link active">ABOUT US</a></li>
+                <li class="nav-item"><a href="{% url 'service' %}" class="nav-link">SERVICES</a></li>
+                <li class="nav-item"><a href="{% url 'contact' %}" class="nav-link">CONTACT</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="about_img">
+        <img src="{% static 'images/HomeDesktopheader.jpg' %}" alt="" width="100%"/>
+       <div class="about_sub home_sub">
+            <span>ABOUT US</span>
+       </div>
+    </div>
+
+    <div class="breakDiv box">
+        <p>
+           Who are we
+        </p>
+    </div>
+
+    <div class="aboutUs home_sub box">
+       <div>
+            <p style="font-weight: 900; font-size: large;">Gibs-Tech staff</p>
+            <p>Lorem, ipsum dolor sit amet consecte
+                tur adipisicing elit. Odit, distinctio b
+                 similique eum illo. Architecto volup</p>
+       </div>
+       <img src="{% static 'images/62.jpg' %}" alt="">
+    </div>
+
+    <div class="breakDiv box">
+        <p>
+          Meet our Team
+        </p>
+    </div>
+
+    <div class="row m-auto aboutTeam">
+        <div class="col-lg-3 col-sm-6 box">
+            <img src="{% static 'img/gibril.jpg' %}" alt="">
+            <div>
+                <p class="team-title"><span>Longmene Gibril</span> <br>
+                Chief Executive Officer</p>
+            </div>
+        </div>
+        <div class="col-lg-3 col-sm-6 box">
+            <img src="{% static 'img/gib.jpg' %}" alt="">
+            <div>
+                <p class="team-title"><span>Longmene Gibril</span> <br>
+                Project Manager</p>
+            </div>
+        </div>
+        <div class="col-lg-3 col-sm-6 box">
+            <img src="{% static 'img/gibril.jpg' %}" alt="">
+            <div>
+                <p class="team-title"><span>Longmene Gibril</span> <br>
+                Chief Technology Officer</p>
+            </div>
+        </div>
+        <div class="col-lg-3 col-sm-6 box">
+            <img src="{% static 'img/gib.jpg' %}" alt="">
+            <div>
+                <p class="team-title"><span>Longmene Gibril</span> <br>
+                Fullstack Developer</p>
+            </div>
+        </div>
+    </div>
+
+    <footer class="box">
+        <div class="footer_head">
+            Stay Connected With Us
+        </div>
+        <div class="footer_body">
+            <img src="{% static 'images/footerfacebook.png' %}" alt="">
+            <img src="{% static 'images/footergoogleplus.png' %}" alt="">
+            <img src="{% static 'images/footerlinkedin.png' %}" alt="">
+            <img src="{% static 'images/footertwitter.png' %}" alt="">
+        </div>
+        <div class="footer_foot">
+            Developped by Longmene Gibril 
+        </div>
+    </footer>
+
+    <div id="gotoUp" style="width: 100%; position: fixed; bottom: 0px; text-align: right; padding: 20px;">
+       
+        <img src="{% static 'images/gototop0.png' %}" alt="" style="width: 40px; ">
+   
+    </div>
+
+
+    <script src="{% static 'javascript/scrollPage.js' %}"></script>
+    <script>
+        var scrolltoUp = document.getElementById('gotoUp').addEventListener('click',()=>{
+            gsap.to(window, {duration: 1, scrollTo: 0});
+            console.log('it was clicked')
+        })
+        
+    </script>
+</body>
+</html>

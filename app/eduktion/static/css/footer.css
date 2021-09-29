@@ -1,0 +1,17 @@
+footer{
+    background-color: rgb(40,40,40);
+    height: 200px;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.footer_head{
+    font-size: x-large;
+}
+
+.footer_foot{
+    padding-bottom: 20px;
+}

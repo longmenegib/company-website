@@ -1,0 +1,104 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="home.css" media="screen and (max-width: 480px)">
+	<link rel="stylesheet" type="text/css" href="{% static 'bootstrap/css/bootstrap.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'css/home.css' %}">
+	<title>home page</title>
+</head>
+<body>
+<div class="container">
+	<header class="row">
+		<div class="col-xs-1 active"><a href="home.html">Home</a></div>
+		<div class="col-offset-1 col-xs-1"><a href="#">Video</a></div>
+		<div class="col-offset-1 col-xs-1"><a href="#">Forum</a></div>
+		<div class="col-offset-1 col-xs-1"><a href="#">Course</a></div>
+		<div class="col-offset-1 col-xs-1"><a href="{% url 'signup' %}"><div class="sign">signin</div></a></div>
+		<div class="col-offset-1 col-xs-2">
+		<form class="row">
+			<input type="text" style="width:150px" class="input-sm-2 form-control"
+			placeholder="Search">
+			<button type="submit" class="btn btn-primary btn-sm-2"> Search</button>
+			</form>
+		</div>
+	</header>
+	<div class="row">
+		<div class="col-lg-12"><div class="welco">Welcome to this programming website</div></div>
+	</div>
+	<section class="row">
+		<article class="col-sm-8">
+			<span>OBJECTIF</span><br>
+				<p>Programming is all about the design, the schedule of a program. It is the act of writing a computer program. In nowadays, they are just variety of programming languages such as:</p>
+					<ul>
+						<li><strong>Python</strong> (created by ... in ....)</li>
+						<li><strong>C</strong> (created by ... in ....)</li>
+						<li><strong>Java</strong> (created by ... in ....)</li>
+						<li><strong>Ruby</strong> (created by ... in ....)</li>
+						<li><strong>Javascript</strong> (created by ... in ....)</li>
+						<li><strong>Perl</strong> (created by ... in ....)</li>
+						<li><strong>C#/Objective C</strong> (created by ... in ....)</li>
+						<li><strong>Kotlin and others</strong> (created by ... in ....)</li>
+					</ul><p>
+					We will surely pass a whole day we if try to list all of them. <strong>We are going to guide and teach you through the language that you will be learning.</strong></p>
+				
+			<div class="video_part">
+				<video controls="controls" width="500" height="300" poster ="{% static 'images/code.png' %}">
+					<source src="video/video_intro.mp4" type="video/mp4">
+					<source src="video/video_intro.webm" type="video/webm">
+				</video>
+			</div>
+		</article>
+		<aside class="col-offset-2 col-sm-2">
+			<img src="images/im (1).jpg" id="img5">
+			<img src="images/im (2).jpg" id="img4">
+			<img src="images/im (3).jpg" id="img3">
+			<img src="images/im (4).jpg" id="img2">
+			<img src="images/im (5).jpg" id="img1">
+			<script src="bootstrap/js/jquery.js"></script>
+			<script>
+			$(function() {
+			$('img').first().fadeOut(2000, function suivante() {
+			$(this).next('img').fadeOut(2000,suivante);
+			});
+			});
+			</script>
+		</aside>
+	</section>
+	<div class="sec2">
+	<section class="row">
+		<div class="col-lg-12">
+			<div class="row">
+				<div class="col-lg-2">
+					<img src="{% static 'images/gib_small.png' %}">
+				</div>
+				<div class="col-lg-3"><div class="about_dev">
+					About the DEVELOPER<br>
+					<em><strong>Longmene Gibril born on january 2001</strong></em><br>I'm a student in coltech of the university of bamenda.<br><a href="#">More</a></div></div>
+				<div class="col-offset-3 col-sm-3">
+					DISCOVER PDF NOTES ON:
+					<ul>
+						<li>C Programming <a href="#">Download</a></li>
+						<li>HTML5/CSS3 <a href="#">Download</a></li>
+						<li>Python course <a href="#">Download</a></li>
+					</ul>
+				</div>
+				</div>
+			</div>
+	</section>
+</div>
+<footer class="row">
+	<div class="col-lg-12 bot_part">OTHERS
+	<div class="row">
+		<div class="col-sm-2"><a href="#">Become a mentor</a></div>
+		<div class="col-sm-2"><a href="#">Terms</a></div>
+		<div class="col-sm-2"><a href="#">Join Us</a></div>
+		<div class="col-sm-2"><a href="#">Donate</a></div>
+		<div class="col-sm-4">Change the language <a href="#">English</a></div>
+	</div>
+</footer>
+</div>
+
+</body>
+</html>
